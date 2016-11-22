@@ -1,0 +1,40 @@
+hash: ae6b6fd7acc8af5129836d8bc2e8348b61e00ef666009834a14c60258bb0093a
+updated: 2016-11-22T16:48:16.157679486+09:00
+imports:
+- name: github.com/golang/protobuf
+  version: 8ee79997227bf9b34611aee7946ae64735e6fd93
+  subpackages:
+  - proto
+- name: github.com/google/go-github
+  version: d4f1b2d029be1730fd349ca929cc9c0da4a27007
+  subpackages:
+  - github
+- name: github.com/google/go-querystring
+  version: 9235644dd9e52eeae6fa48efd539fdc351a0af53
+  subpackages:
+  - query
+- name: github.com/jessevdk/go-flags
+  version: 8bc97d602c3bfeb5fc6fc9b5a9c898f245495637
+- name: github.com/pkg/errors
+  version: 645ef00459ed84a119197bfb8d8205042c6df63d
+- name: github.com/tcnksm/go-gitconfig
+  version: d154598bacbf4501c095a309753c5d4af66caa81
+- name: golang.org/x/net
+  version: 4971afdc2f162e82d185353533d3cf16188a9f4e
+  subpackages:
+  - context
+- name: golang.org/x/oauth2
+  version: d5040cddfc0da40b408c9a1da4728662435176a9
+  subpackages:
+  - internal
+- name: google.golang.org/appengine
+  version: ca59ef35f409df61fa4a5f8290ff289b37eccfb8
+  subpackages:
+  - internal
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/remote_api
+  - internal/urlfetch
+  - urlfetch
+testImports: []

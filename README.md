@@ -17,11 +17,11 @@ ghl [--os=OS] [--arch=ARCH] [--token=TOKEN] <Owner>/<Repository>[@<Tag>]
 ```
 
 ### Options
-|Option |Description                                                                                     |
-|-------|------------------------------------------------------------------------------------------------|
-|--os   |Specifies the name of the target OS like 'windows', 'darwin' or 'linux'. (default: runtime.GOOS)|
-|--arch |Specifies the name of the target architecture like '386' or 'amd64'. (default: runtime.GOARCH)  |
-|--token|GitHub API Token. If not given, `ghl` reads it from `$GITHUB_TOKEN`.                            |
+|Option |Description                                                                                       |
+|-------|--------------------------------------------------------------------------------------------------|
+|--os   |Specifies the name of the target OS like `windows`, `darwin` or `linux`. (default: `runtime.GOOS`)|
+|--arch |Specifies the name of the target architecture like `386` or `amd64`. (default: `runtime.GOARCH`)  |
+|--token|GitHub API Token. If not given, `ghl` reads it from `$GITHUB_TOKEN`.                              |
 
 ### Examples
 ```bash

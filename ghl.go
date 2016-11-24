@@ -12,7 +12,7 @@ import (
 )
 
 // Version of this program
-const Version = "0.0.1"
+const Version = "0.0.2"
 
 type GHL struct {
 	Client *github.Client

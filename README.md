@@ -21,13 +21,13 @@ ghl [--os=OS] [--arch=ARCH] [--token=TOKEN] <Owner>/<Repository>[@<Tag>]
 |-------|--------------------------------------------------------------------------------------------------|
 |--os   |Specifies the name of the target OS like `windows`, `darwin` or `linux`. (default: `runtime.GOOS`)|
 |--arch |Specifies the name of the target architecture like `386` or `amd64`. (default: `runtime.GOARCH`)  |
-|--token|GitHub API Token. If not given, `ghl` reads it from `$GITHUB_TOKEN`.                              |
+|--token|GitHub API Token. If not given, `ghl` reads it from `$GITHUB_TOKEN` variable.                     |
 
 ### Examples
 ```bash
 ghl tcnksm/ghr
 ghl tcnksm/ghr@v0.5.3                 # specifies the release version
-ghl tcnksm/ghr --os linux --arch 368  # specifies the name of the target OS and architecture
+ghl tcnksm/ghr --os linux --arch 386  # specifies the name of the target OS and architecture
 
 wget -O ghr.zip $(ghl tcnksm/ghr)     # download latest release asset
 ```

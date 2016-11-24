@@ -24,7 +24,7 @@ test:
 $(DEVTOOLS)/glide:
 		@echo "Installing glide"
 		@mkdir -p $(DEVTOOLS)
-		@wget -q -O - "https://ghal.ga/masterminds/glide?os=$(GOOS)&arch=$(GOARCH)" | tar xvz
+		@wget -O - "https://ghal.ga/masterminds/glide?os=$(GOOS)&arch=$(GOARCH)" | tar xvz
 		@mv $(GOOS)-$(GOARCH)/glide $(DEVTOOLS)
 		@rm -rf $(GOOS)-$(GOARCH)
 
@@ -37,4 +37,4 @@ release: all
 	@ghr --username hatyuki --token $(GITHUB_TOKEN) --replace $(VERSION) pkg/
 
 clean:
-	-rm -rf pkg/ devtools/
+	-rm -rf pkg/ devtools/ $(GOOS)-$(GOARCH)/
